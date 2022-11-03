@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 42.62 s <<< FAILURE! - in TestSuite
+com.sample.www.TC01MainPage.tc02VerifyOneWayFlights  Time elapsed: 10.07 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#gi_search_btn"}
+  (Session info: chrome=108.0.5359.22)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'KNUTCHER', ip: '192.168.85.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.22, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Galih\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:43898}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 122be7b09855fd90460e73a63e68dbbd
+*** Element info: {Using=id, value=gi_search_btn}
+	at com.sample.www.TC01MainPage.tc02VerifyOneWayFlights(TC01MainPage.java:51)
+
+com.sample.www.TC02Flights.tc01VerifyPageResults  Time elapsed: 10.027 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at com.sample.www.TC02Flights.validateTheCost(TC02Flights.java:52)
+	at com.sample.www.TC02Flights.tc01VerifyPageResults(TC02Flights.java:23)
+
+com.sample.www.TC02Flights.tc02VerifyApplyFilters  Time elapsed: 10.06 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='4am - 11am']"}
+  (Session info: chrome=108.0.5359.22)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'KNUTCHER', ip: '192.168.85.54', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.22, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Galih\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:43898}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 122be7b09855fd90460e73a63e68dbbd
+*** Element info: {Using=xpath, value=//span[text()='4am - 11am']}
+	at com.sample.www.TC02Flights.tc02VerifyApplyFilters(TC02Flights.java:34)
+

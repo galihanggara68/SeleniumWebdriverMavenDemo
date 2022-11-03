@@ -39,3 +39,9 @@
 [INFO ] 2022-11-03 10:59:21.560 [main] TC01MainPage - Verify one-way flights
 [INFO ] 2022-11-03 10:59:31.625 [main] TC02Flights - Verify Page Results
 [INFO ] 2022-11-03 10:59:41.675 [main] TC02Flights - Verify Apply Filters
+[INFO ] 2022-11-03 11:11:12.553 [main] TC01MainPage - Verify URL
+[INFO ] 2022-11-03 11:11:20.872 [main] TC01MainPage - Open URL
+[INFO ] 2022-11-03 11:11:20.880 [main] TC01MainPage - Verification Successful - The correct title is displayed on the web page.
+[INFO ] 2022-11-03 11:11:20.888 [main] TC01MainPage - Verify one-way flights
+[INFO ] 2022-11-03 11:11:30.961 [main] TC02Flights - Verify Page Results
+[INFO ] 2022-11-03 11:11:40.989 [main] TC02Flights - Verify Apply Filters
