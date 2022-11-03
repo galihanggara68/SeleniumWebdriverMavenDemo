@@ -15,6 +15,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxDriverLogLevel;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -127,8 +128,12 @@ public class TestBase {
         if (properties.getProperty("BrowserName").equalsIgnoreCase("chrome")) {
 
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.setBinary(properties.getProperty("ChromeBinary"));
+            chromeOptions.addArguments("--start-maximized");
+            driver = new ChromeDriver(chromeOptions);
             System.setProperty("webdriver.chrome.logfile", "./logs/chromeLogs.txt");
+            
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
