@@ -131,6 +131,7 @@ public class TestBase {
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.setBinary(properties.getProperty("ChromeBinary"));
             chromeOptions.addArguments("--start-maximized");
+            options.addArguments("--headless");
             driver = new ChromeDriver(chromeOptions);
             System.setProperty("webdriver.chrome.logfile", "./logs/chromeLogs.txt");
             
